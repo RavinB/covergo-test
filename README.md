@@ -1,25 +1,14 @@
 # covergo-test
 
-This template should help get you started developing with Vue 3 in Vite.
+COvergo Test Readme
 
-## Recommended IDE Setup
+## technical choices, architecture and the approach
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+1. Created 4 routes on /router/index.ts for all 4 views
+2. Created 4 views
+3. Created ButtonGlobal in components for button re-usability
+4. In TellUsAboutYourselfView.vue added an object data to use it in the DOM. (mostly this data is fetched from API). All the logic is calculated on the fly in this file. if age is over 100 user is sent to /error.
+5. from TellUsAboutYourselfView.vue data is sent to SummaryView.vue as query param.
 
 ## Project Setup
 
